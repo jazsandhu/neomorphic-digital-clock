@@ -26,7 +26,7 @@
 $timeValue: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9;
 @each $timeValue in $timeValue {
   .currentTime#{$timeValue} {
-  margin-top: calc(45vh - 30px * #{$timeValue});
+  margin-top: calc(50vh - 30px * #{$timeValue});
     .columnValue_#{$timeValue} {
       color: rgb(255, 153, 153);
       font-size: xx-large;
