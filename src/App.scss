@@ -1,0 +1,44 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+}
+
+.backgroundImage {
+  background: url("./backround-gif2.gif");
+  background-size: cover;
+  height: 100vh;
+}
+
+.title {
+  width: 95%;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-style: oblique;
+  color: rgb(255, 153, 153);
+}
+
+.credit {
+  width: 95%;
+  position: absolute;
+  text-align: end;
+  bottom: 5px;
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 153, 153);
+}
+
+.clock {
+  display: flex;
+  font-size: medium;
+}
+
+.comma {
+  margin-top: 45vh;
+  height: 20px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: rgb(255, 153, 153);
+}

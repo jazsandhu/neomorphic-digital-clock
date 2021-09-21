@@ -1,0 +1,41 @@
+.columnGroup {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeColumn {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(31, 33, 36);
+  border-radius: 5px;
+  border: 1px rgb(62, 65, 73) solid;
+  box-shadow: -2px -2px rgb(141, 107, 107);
+  color: rgb(83, 64, 64);
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+$timeValue: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9;
+@each $timeValue in $timeValue {
+  .currentTime#{$timeValue} {
+  margin-top: calc(45vh - 30px * #{$timeValue});
+    .columnValue_#{$timeValue} {
+      color: rgb(255, 153, 153);
+      font-size: xx-large;
+      font-weight: 300;
+    }
+    /* allows change to slide */
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+}
