@@ -48,7 +48,6 @@ function App() {
           <div className="comma"> : </div>
           <Second second={currentSecond} />
         </div>
-        <i className="credit">created by Jaz Sandhu</i>
       </div>
     </div>
   );
