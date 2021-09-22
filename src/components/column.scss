@@ -17,19 +17,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 25px;
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
+  font-size: small;
 }
 
 $timeValue: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9;
 @each $timeValue in $timeValue {
   .currentTime#{$timeValue} {
-  margin-top: calc(45vh - 30px * #{$timeValue});
+  margin-top: calc(50vh - 25px * #{$timeValue});
     .columnValue_#{$timeValue} {
       color: rgb(255, 153, 153);
-      font-size: xx-large;
+      font-size: x-large;
       font-weight: 300;
     }
     /* allows change to slide */
