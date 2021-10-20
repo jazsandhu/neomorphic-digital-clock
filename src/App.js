@@ -40,7 +40,6 @@ function App() {
   return (
     <div className="backgroundImage">
       <div className="App">
-        <p className="title">Neumorphic Digital Clock <sup>(24h)</sup></p>
         <div className="clock">
           <Hour hour={currentHour} />
           <div className="comma"> : </div>
@@ -48,7 +47,6 @@ function App() {
           <div className="comma"> : </div>
           <Second second={currentSecond} />
         </div>
-        <p className="credit">created by Jaz Sandhu</p>
       </div>
     </div>
   );
